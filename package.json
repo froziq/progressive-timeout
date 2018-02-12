@@ -1,0 +1,61 @@
+{
+  "name": "progressive-timeout",
+  "description": "Simple implementation of progressive timeout",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "progressive",
+    "timeout"
+  ],
+  "homepage": "https://github.com/froziq/progressive-timeout",
+  "bugs": "https://github.com/froziq/progressive-timeout/issues",
+  "version": "1.0.0",
+  "repository": "git@github.com:froziq/progressive-timeout.git",
+  "author": "Yuriy Markov <markov.yuriy94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "precommit": "lint-staged",
+    "test": "jest"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          "env"
+        ]
+      },
+      "development": {
+        "presets": [
+          [
+            "env",
+            {
+              "modules": false
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/index.js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "testRegex": "tests/.*\\.test\\.js$"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "jest-cli": "22.2.2",
+    "lint-staged": "6.1.0",
+    "rollup": "0.55.5",
+    "rollup-plugin-babel": "3.0.3"
+  }
+}
