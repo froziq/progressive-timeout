@@ -35,4 +35,4 @@ import ProgressiveTimeout from 'progressive-timeout';
 
 ## License
 
-This project is licensed under the MIT license, Copyright (c) 2018 Yuriy. For more information see `LICENSE`.
+This project is licensed under the MIT license, Copyright (c) 2018 Yuriy. For more information see [`LICENSE`](https://github.com/froziq/progressive-timeout/blob/master/LICENSE).
