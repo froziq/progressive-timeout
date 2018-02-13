@@ -3,7 +3,7 @@ import pkg from './package.json';
 
 export default [
   {
-    input: 'src/index.js',
+    input: 'src/main.js',
     output: [
       { file: pkg.main, format: 'umd', name: 'ProgressiveTimeout' },
       { file: pkg.module, format: 'es' },
