@@ -12,7 +12,6 @@
   ],
   "homepage": "https://github.com/froziq/progressive-timeout",
   "bugs": "https://github.com/froziq/progressive-timeout/issues",
-  "version": "1.0.0",
   "repository": "git@github.com:froziq/progressive-timeout.git",
   "author": "Yuriy Markov <markov.yuriy94@gmail.com>",
   "license": "MIT",
@@ -51,7 +50,6 @@
     "testRegex": "tests/.*\\.test\\.js$"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
     "jest-cli": "22.2.2",
     "lint-staged": "6.1.0",
