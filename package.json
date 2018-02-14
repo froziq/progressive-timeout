@@ -1,7 +1,8 @@
 {
   "name": "progressive-timeout",
   "description": "Simple implementation of progressive timeout",
-  "main": "dist/progressive-timeout.umd.js",
+  "main": "dist/progressive-timeout.cjs.js",
+  "browser": "dist/progressive-timeout.umd.js",
   "module": "dist/progressive-timeout.esm.js",
   "files": [
     "dist"

@@ -5,7 +5,8 @@ export default [
   {
     input: 'src/main.js',
     output: [
-      { file: pkg.main, format: 'umd', name: 'ProgressiveTimeout' },
+      { file: pkg.main, format: 'cjs' },
+      { file: pkg.browser, format: 'umd', name: 'ProgressiveTimeout' },
       { file: pkg.module, format: 'es' },
     ],
     plugins: [
