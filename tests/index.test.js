@@ -1,4 +1,4 @@
-import ProgressiveTimeout from '../src/index';
+import ProgressiveTimeout from '../src/main';
 
 jest.useFakeTimers();
 
