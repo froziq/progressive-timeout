@@ -1,3 +1,4 @@
 node_modules
 coverage
 .editorconfig
+.DS_Store

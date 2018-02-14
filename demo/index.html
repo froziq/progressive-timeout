@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>progressive-timeout demo</title>
+
+  <style type="text/css">
+    span {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><a href="https://github.com/froziq/progressive-timeout">progressive-timeout</a></h1>
+  This is demo of progressive-timeout<br>
+  Fill inputs bellow and try it
+
+  <p>Press Start button for start progressive-timeout with provided arguments via inputs.</p>
+  <p>Press Stop button for stop timeout.</p>
+
+  <p>Min</p>
+  <input class="prop-min" type="text" size="40" placeholder="1000">
+
+  <p>Max</p>
+  <input class="prop-max" type="text" size="40" placeholder="5000">
+
+  <p>Step</p>
+  <input class="prop-step" type="text" size="40" placeholder="500">
+
+  <button class="start" type="button">Start</button>
+  <button class="stop" type="button">Stop</button>
+
+  <p>
+    Min:<span class="min"></span>
+    Max:<span class="max"></span>
+    Step:<span class="step"></span>
+  </p>
+  <p>
+    Timer:<span class="timer">0</span>seconds
+  </p>
+  <p>
+    Current tick:<span class="tick"></span>
+  </p>
+  <p>
+    Ticks:<span class="ticks">0</span>
+  </p>
+
+  <script src="https://rawgit.com/froziq/progressive-timeout/master/dist/progressive-timeout.umd.js"></script>
+  <script>
+    var timer;
+    var showInterval;
+    var ticks;
+
+    document.querySelector('.start').addEventListener('click', function() {
+      const min = +document.querySelector('.prop-min').value || 1000;
+      const max = +document.querySelector('.prop-max').value || 5000;
+      const step = +document.querySelector('.prop-step').value || 500;
+      var seconds = 0; 
+      ticks = 0;
+      document.querySelector('.min').innerHTML = min;
+      document.querySelector('.max').innerHTML = max;
+      document.querySelector('.step').innerHTML = step;
+      document.querySelector('.tick').innerHTML = min;     
+      document.querySelector('.ticks').innerHTML = ticks; 
+      
+      if (showInterval) {
+        seconds = 0;
+        clearInterval(showInterval);
+      }
+
+      showInterval = setInterval(function() {
+        seconds += 100;
+        document.querySelector('.timer').innerHTML = seconds / 1000;
+      }, 100);
+
+      if (timer) timer.stop();
+
+      timer = new ProgressiveTimeout(function() {
+        seconds = 0;
+        ticks += 1;
+        document.querySelector('.tick').innerHTML = timer.tick;
+        document.querySelector('.ticks').innerHTML = ticks;
+      }, { min, max, step });
+
+      timer.start();
+    });
+
+    document.querySelector('.stop').addEventListener('click', function() {
+      if (timer) {
+        timer.stop();
+        clearInterval(showInterval);
+      }
+    })
+  </script>
+</body>
+
+</html>
