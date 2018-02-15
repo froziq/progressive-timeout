@@ -33,7 +33,7 @@ progressiveTimeout = new ProgressiveTimeout(callback, OPTIONS);
 start()
 
 ```javascript
-progressiveTimeout.start(); // now timeout tick increase every *step*ms 
+progressiveTimeout.start(); // now timeout tick increase every 'step' ms 
 ```
 
 stop()
