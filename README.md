@@ -3,8 +3,8 @@
 Simple implementation of progressive timeout in JavaScript. 
 
 [![Build Status](https://travis-ci.org/froziq/progressive-timeout.svg?branch=master)](https://travis-ci.org/froziq/progressive-timeout)
-[![npm](https://img.shields.io/npm/dm/progressive-timeout.svg)](https://github.com/froziq/progressive-timeout)
-[![npm](https://img.shields.io/npm/v/progressive-timeout.svg)](https://github.com/froziq/progressive-timeout)
+[![npm](https://img.shields.io/npm/dm/progressive-timeout.svg)](https://www.npmjs.com/package/progressive-timeout)
+[![npm](https://img.shields.io/npm/v/progressive-timeout.svg)](https://www.npmjs.com/package/progressive-timeout)
 
 [`DEMO`](https://froziq.github.io/progressive-timeout/demo)
 
