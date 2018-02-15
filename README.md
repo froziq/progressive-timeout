@@ -18,21 +18,28 @@ npm install progressive-timeout --save
 Define new instance of ProgressiveTimeout with providing calback function as first parametr and options object as second parametr. Options object should contain MIN, MAX and STEP properties.
 When the next tick reaches the MAX value, it becomes MAX.
 
-
 ```javascript
 import ProgressiveTimeout from 'progressive-timeout';
 
-...
-  const OPTIONS = {
-    min: 500,
-    max: 20000,
-    step: 2000,
-  };
+const OPTIONS = {
+  min: 500,
+  max: 20000,
+  step: 2000,
+};
 
-  progressiveTimeout = new ProgressiveTimeout(callback, OPTIONS);
-  progressiveTimeout.start();
-  progressiveTimeout.stop();
-...
+progressiveTimeout = new ProgressiveTimeout(callback, OPTIONS);
+```
+
+start()
+
+```javascript
+progressiveTimeout.start(); // now timeout tick increase every *step*ms 
+```
+
+stop()
+
+```javascript
+progressiveTimeout.stop(); // stop and clear timeout
 ```
 
 ## License

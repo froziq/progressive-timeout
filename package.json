@@ -13,7 +13,7 @@
   ],
   "homepage": "https://github.com/froziq/progressive-timeout",
   "bugs": "https://github.com/froziq/progressive-timeout/issues",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "git@github.com:froziq/progressive-timeout.git",
   "author": "Yuriy Markov <markov.yuriy94@gmail.com>",
   "license": "MIT",
