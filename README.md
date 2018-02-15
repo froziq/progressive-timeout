@@ -4,7 +4,7 @@ Simple implementation of progressive timeout in JavaScript.
 
 [![Build Status](https://travis-ci.org/froziq/progressive-timeout.svg?branch=master)](https://travis-ci.org/froziq/progressive-timeout)
 
-[`DEMO`](https://froziq.github.io/progressive-timeout/)
+[`DEMO`](https://froziq.github.io/progressive-timeout/demo)
 
 ## Install
 
