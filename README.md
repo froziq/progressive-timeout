@@ -46,6 +46,10 @@ stop()
 progressiveTimeout.stop(); // stop and clear timeout
 ```
 
+## Authors
+
+* **Yuriy Markov** - *Initial work* - [froziq](https://github.com/froziq)
+
 ## License
 
 This project is licensed under the MIT license, Copyright (c) 2018 Yuriy. For more information see [`LICENSE`](https://github.com/froziq/progressive-timeout/blob/master/LICENSE).
