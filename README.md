@@ -6,6 +6,8 @@ Simple implementation of progressive timeout in JavaScript.
 
 [`DEMO`](https://froziq.github.io/progressive-timeout/demo)
 
+![progressive-timeout](https://raw.githubusercontent.com/froziq/progressive-timeout/demo/demo.gif)
+
 ## Install
 
 via NPM
